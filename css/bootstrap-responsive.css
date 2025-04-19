@@ -1,0 +1,122 @@
+/* Utility Classes */
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+}
+.clearfix::after {
+  clear: both;
+}
+.clearfix {
+  display: flow-root;
+}
+
+/* Hide text but keep for screen readers */
+.hide-text {
+  font-size: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* Full width input */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Visibility Classes for Responsive Design */
+.visible-phone,
+.visible-tablet,
+.hidden-desktop,
+.visible-desktop {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .visible-phone {
+    display: block !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+  .hidden-desktop {
+    display: block !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .visible-tablet {
+    display: block !important;
+  }
+  .hidden-tablet {
+    display: none !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .hidden-desktop {
+    display: block !important;
+  }
+}
+
+@media (min-width: 980px) {
+  .visible-desktop {
+    display: block !important;
+  }
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+/* Responsive Grid Using Modern Flexbox (example for row and span*) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*="span"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.span1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.span2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.span3 { flex: 0 0 25%; max-width: 25%; }
+.span4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.span5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.span6 { flex: 0 0 50%; max-width: 50%; }
+.span7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.span8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.span9 { flex: 0 0 75%; max-width: 75%; }
+.span10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.span11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.span12 { flex: 0 0 100%; max-width: 100%; }
+
+/* Offset Classes */
+.offset1 { margin-left: 8.33%; }
+.offset2 { margin-left: 16.66%; }
+.offset3 { margin-left: 25%; }
+.offset4 { margin-left: 33.33%; }
+.offset5 { margin-left: 41.66%; }
+.offset6 { margin-left: 50%; }
+.offset7 { margin-left: 58.33%; }
+.offset8 { margin-left: 66.66%; }
+.offset9 { margin-left: 75%; }
+.offset10 { margin-left: 83.33%; }
+.offset11 { margin-left: 91.66%; }
+.offset12 { margin-left: 100%; }
